@@ -1,0 +1,130 @@
+*{
+    color: black;
+    box-sizing: border-box;
+
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}   
+
+nav{background-color: aqua;
+height: 15vh;}
+header{
+    
+    display: flex;
+}
+
+#gauche{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    width: 50%;
+}
+#droite{
+    
+    width: 50%;
+    display: flex;
+}
+#droite #col_g{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#droite #col_d{
+    
+    width: 50%;
+    margin-right: 2%;
+}
+
+.boite_droite{
+    background-color: yellow;
+    margin: 20px;
+    height: 45%;
+}
+
+#boite3{
+    height: 100%;
+    
+}
+
+
+
+.thecard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: white;
+
+}
+.nn{
+    width: 100%;
+    height: 100%;
+}
+.nn:hover .thecard{
+transform: rotateY(180deg);
+}
+
+
+.thefront{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-image: url(arbitre.jpg);
+    background-size: auto 700px;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 0;
+}
+
+.theback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    color:#333;
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.theback a{
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px;
+    border: solid 1px ;
+    border-radius: 5px;
+}
+.theback a:hover{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px;
+    background-color: #100F40;
+    border: solid 1px  #100F40;
+    border-radius: 5px;
+}
