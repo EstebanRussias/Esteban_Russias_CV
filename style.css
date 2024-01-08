@@ -31,6 +31,7 @@ header{
     }
     #gauche{
         width: 50%;
+        height: 40%;
     }
     #droite{
         width: 50%;
@@ -56,12 +57,16 @@ header{
     header{
         flex-wrap: wrap;
     }
+    #gauche{
+        margin-bottom: 25px;
+    }
     
     #droite #col_g{
         width: 330px;
     }
     #droite #col_d{
         width: 330px;
+        margin-bottom: 25px;
     }
 
 }
@@ -96,6 +101,17 @@ h2{
     text-decoration: underline;
     text-align: center;
     margin-bottom: 10px;
+}
+h3{
+    display:inline-block;
+    font-size: 2.5rem;
+    font-weight:bolder;
+    font-family: FreeMono, monospace;
+    margin-bottom: 10px;
+}
+
+h3::first-letter{
+    font-size: 3.5rem;
 }
 .theback p{
     font-size: 1rem;
@@ -215,6 +231,15 @@ transform: rotateY(180deg);
     background-repeat: no-repeat;
     color: white;
     z-index: 0;
+}
+.thefront p{
+    padding-bottom: 30px;
+    padding-top: 400px;
+    font-size: 1.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0) ,black);   
+     text-align: center;
+     border-radius: 0% 0% 10px 10px;
+    color: white;
 }
 
 .theback{
