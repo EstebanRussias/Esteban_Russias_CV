@@ -14,38 +14,137 @@
 nav{background-color: aqua;
 height: 15vh;}
 header{
-    
     display: flex;
+    justify-content: center;
 }
+
+
+@media screen and (min-width: 1665px) {
+    header{
+        display: flex;
+        
+    }
+    #gauche{
+        width: 50%;
+    }
+    #droite{
+        width: 50%;
+    }
+    #droite #col_g{
+        width: 345px;
+    }
+    #droite #col_d{
+        width: 345px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #gauche{
+        flex-direction: column;
+        
+    }
+    #gauche img{
+        margin-bottom: 25px;
+    } 
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        flex-wrap: wrap;
+    }
+    
+    #droite #col_g{
+        width: 330px;
+    }
+    #droite #col_d{
+        width: 330px;
+    }
+
+}
+@media screen and (max-width: 720px) {
+    #gauche{
+        height: 200px;
+    }
+    #droite{
+        flex-wrap: wrap;
+    }
+    #droite #col_g{
+        width: 350px;
+    }
+    #droite #col_d{
+        width: 350px;
+        height: auto;
+    }
+    
+}
+
+
+h1{
+    font-size: 3rem;
+    font-weight:bolder;
+    text-align: center;
+    margin-top: 1%;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight:bolder;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.theback p{
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.savoir_plus{
+    text-align: end;
+}
+
 
 #gauche{
     background-color: red;
     display: flex;
     align-items: center;
-    height: 75vh;
-    width: 50%;
+    height: 80vh;
+    width: 690px;
 }
+#pp{
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
 #droite{
-    
-    width: 50%;
+    height: 100% ; 
+    width: 690px;
     display: flex;
+    justify-content: center;
 }
 #droite #col_g{
-    width: 50%;
+    width: 345px;
     display: flex;
     flex-direction: column;
 }
 
 #droite #col_d{
+    width: 345px;
+    height: 80vh;
     
-    width: 50%;
-    margin-right: 2%;
 }
 
 .boite_droite{
     background-color: yellow;
+    border-radius: 10px;
     margin: 20px;
     height: 45%;
+}
+#boite1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
 }
 
 #boite3{
@@ -88,7 +187,7 @@ transform: rotateY(180deg);
     border-radius: 10px;
     backface-visibility: hidden;
     background-image: url(arbitre.jpg);
-    background-size: auto 700px;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     color: white;
     z-index: 0;
