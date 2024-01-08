@@ -18,6 +18,11 @@ header{
     justify-content: center;
 }
 
+.text{
+    text-align: center;
+
+}
+
 
 @media screen and (min-width: 1665px) {
     header{
@@ -116,7 +121,7 @@ h2{
     height: 200px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 #droite{
@@ -148,6 +153,16 @@ h2{
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
+    
+}
+
+#boite1_cacher{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    display: none;
+    
 }
 #boite2{
     display: flex;
@@ -235,4 +250,17 @@ transform: rotateY(180deg);
     background-color: #100F40;
     border: solid 1px  #100F40;
     border-radius: 5px;
+}
+
+ul li{
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.logo{
+    width: 30px;
+    margin-right: 25px ;
+    
+    height: auto;
 }
