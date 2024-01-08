@@ -11,8 +11,8 @@
 	vertical-align: baseline;
 }   
 
-nav{background-color: aqua;
-height: 15vh;}
+nav{
+    height: 15vh;}
 header{
     display: flex;
     justify-content: center;
@@ -82,6 +82,7 @@ h1{
     font-size: 3rem;
     font-weight:bolder;
     text-align: center;
+    text-decoration: underline;
     margin-top: 1%;
 }
 h2{
@@ -102,10 +103,12 @@ h2{
 
 
 #gauche{
-    background-color: red;
+    background-color: whitesmoke;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    height: 80vh;
+    padding: 10px;
+    height: auto;
     width: 690px;
 }
 #pp{
@@ -135,12 +138,18 @@ h2{
 }
 
 .boite_droite{
-    background-color: yellow;
+    background-color: whitesmoke;
     border-radius: 10px;
     margin: 20px;
     height: 45%;
 }
 #boite1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+#boite2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,7 +213,7 @@ transform: rotateY(180deg);
     padding: 10px;
     border-radius: 10px;
     backface-visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
     color:#333;
     transform: rotateY(180deg);
     z-index: 0;
